@@ -11,51 +11,58 @@
 
         <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/onepage-scroll.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/styles.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <nav class="closed">
+            <span><button class="arrow"></button></span>
+            <ul>
+                <li class="hidden"><a>Home</a></li>
+                <li><a>Our Philosophy</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>The Team</a></li>
+            </ul>
+        </nav>
+        <div class="section-container">
+            <section class="logo" style="background-color: red">
+                <h1>Illicit</h1>
+            </section>
 
-        <section class="logo">
-            <h1>Illicit</h1>
-        </section>
+            <section class="philosophy" style="background-color: yellow">
+                <div class="container">
+                    <div class="left">
+                        <h2>Content will go here</h2>
+                    </div>
+                    <div class="right">
+                        <h2>Content will go here</h2>
+                    </div>
+                </div>
+            </section>
 
-        <section class="philosophy">
-            <div class="container">
-                <div class="left">
-                    <h2>Content will go here</h2>
+            <section class="us" style="background-color: cyan">
+                <div class="team">
+                    <div class="noah">
+                        <img src="img/noah.jpg">
+                        <h3>Noah</h3>
+                    </div>
+                    <div class="lawrence">
+                        <img src="img/lawrence.jpg">
+                        <h3>Lawrence</h3>
+                    </div>
                 </div>
-                <div class="right">
-                    <h2>Content will go here</h2>
-                </div>
-            </div>
-        </section>
-
-        <section></section>
-
-        <section class="us">
-            <div class="team">
-                <div class="noah">
-                    <img src="img/noah.jpg">
-                    <h3>Noah</h3>
-                </div>
-                <div class="lawrence">
-                    <img src="img/lawrence.jpg">
-                    <h3>Lawrence</h3>
-                </div>
-            </div>
-            <div class="contact">
+            </section>
+            
+            <section class="contact" style="background-color: purple">
                 <a href="">Shit will go here i promise</a>
-            </div>
-        </section>
-
+            </section>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/jquery.onepage-scroll.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
