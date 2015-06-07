@@ -124,7 +124,7 @@ section.logo {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 5.7em; }
-  section.logo h1 {
+  section.logo header {
     position: relative;
     top: 35%;
     color: #FFD34E; }
@@ -156,54 +156,123 @@ section.philosophy {
     section.philosophy .container .right {
       background-color: #eee; }
 
+/*
 section.us {
-  margin: 0;
-  width: 100vw;
-  overflow: auto;
-  background-color: tan;
-  display: table; }
-  section.us h2 {
-    position: relative;
-    text-align: center;
-    top: 5%; }
-  section.us div.team {
     margin: 0;
-    padding: 0;
-    display: table-row;
-    width: 90%;
-    height: 75vh;
-    text-align: center;
-    -ms-text-justify: distribute-all-lines;
-    text-justify: distribute-all-lines; }
-    section.us div.team:after {
-      content: '';
-      width: 100%;
+    width: 100vw;
+    overflow: auto;
+    
+    background-color: tan;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    & > * {
+        flex: 1 100%;
+    }    
+
+    header {
+        flex: 2;
+    }
+
+    div {
+        flex: 1;
+        margin: 3rem 0;
+        text-align: center;
+        min-width: 400px;
+        // width: 40%;
+        // height: auto;
+        display: inline-block;
+        vertical-align: middle;
+
+        * {
+            display: inline-block;
+        }
+
+        img {
+            // width: 35%;
+            // min-width: 250px;
+        }
+
+        div {
+            width: 60%;
+        }
+
+        h3, p, a {
+            width: 70%;
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+
+    div:first-child {
+        order: 1;
+    }
+
+    div:last-child {
+        order: 2;
+    }
+
+    img {
+        width: 175px;
+        height: 175px;
+        border-radius: 50%;
+    }
+
+    footer.contact {
+        background-color: #aaa;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+*/
+section.us {
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around; }
+  section.us article.crew {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    justify-content: center; }
+    section.us article.crew div {
+      margin-right: 3rem;
+      margin-bottom: 5rem;
       display: inline-block;
-      font-size: 0;
-      line-height: 0; }
-    section.us div.team div {
-      margin: 3rem 0;
-      text-align: center;
-      min-width: 400px;
-      width: 40%;
-      height: auto;
-      display: inline-block;
-      vertical-align: middle; }
-      section.us div.team div * {
-        display: inline-block; }
-      section.us div.team div div {
-        width: 60%; }
-      section.us div.team div h3, section.us div.team div p, section.us div.team div a {
-        width: 70%; }
-      section.us div.team div p {
-        text-align: left; }
-    section.us div.team img {
-      width: 150px;
-      height: 150px;
+      text-align: left; }
+      section.us article.crew div div {
+        max-width: 400px; }
+      section.us article.crew div h3, section.us article.crew div a {
+        text-align: center; }
+      section.us article.crew div img {
+        vertical-align: top;
+        margin: 1rem; }
+    section.us article.crew img {
+      width: 175px;
+      height: 175px;
       border-radius: 50%; }
-  section.us div.contact {
-    height: 25vh;
-    background-color: #aaa;
-    text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
