@@ -6,6 +6,9 @@ html, body {
   font-family: 'Open Sans';
   font-weight: 400; }
 
+body {
+  box-sizing: border-box; }
+
 section {
   height: 100vh;
   width: 100vw;
@@ -20,7 +23,7 @@ h1 {
   font-size: 11rem; }
 
 h2 {
-  font-size: 5.5rem; }
+  font-size: 4rem; }
 
 h3 {
   font-size: 3rem; }
@@ -154,89 +157,45 @@ section.philosophy {
     section.philosophy .container .left {
       background-color: #eee; }
     section.philosophy .container .right {
-      background-color: #eee; }
-
-/*
-section.us {
-    margin: 0;
-    width: 100vw;
-    overflow: auto;
-    
-    background-color: tan;
-
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;  
-
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-
-    & > * {
-        flex: 1 100%;
-    }    
-
-    header {
-        flex: 2;
-    }
-
-    div {
-        flex: 1;
-        margin: 3rem 0;
+      text-align: center; }
+      section.philosophy .container .right div {
+        margin: 0 auto;
         text-align: center;
-        min-width: 400px;
-        // width: 40%;
-        // height: auto;
-        display: inline-block;
-        vertical-align: middle;
-
-        * {
-            display: inline-block;
-        }
-
-        img {
-            // width: 35%;
-            // min-width: 250px;
-        }
-
-        div {
-            width: 60%;
-        }
-
-        h3, p, a {
-            width: 70%;
-        }
-
-        p {
-            text-align: left;
-        }
-    }
-
-    div:first-child {
-        order: 1;
-    }
-
-    div:last-child {
-        order: 2;
-    }
-
-    img {
-        width: 175px;
-        height: 175px;
-        border-radius: 50%;
-    }
-
-    footer.contact {
-        background-color: #aaa;
-        text-align: center;
-
+        display: -webkit-flex;
         display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-*/
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        -webkit-justify-content: center;
+        justify-content: center; }
+      section.philosophy .container .right a {
+        width: 50%; }
+
+section.portfolio div.container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center; }
+section.portfolio .grid {
+  margin: 0;
+  padding-bottom: 2rem;
+  list-style: none;
+  position: relative;
+  width: 100%; }
+  section.portfolio .grid li {
+    margin: 2vh 1vw;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 45%; }
+    section.portfolio .grid li img {
+      display: block;
+      width: 100%;
+      cursor: pointer;
+      max-width: 100%; }
+
 section.us {
   text-align: center;
   display: -webkit-box;
