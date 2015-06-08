@@ -1,46 +1,46 @@
 @keyframes noise-anim {
   0% {
-    clip: rect(83px, 9999px, 40px, 0); }
+    clip: rect(20px, 9999px, 62px, 0); }
   5% {
-    clip: rect(5px, 9999px, 85px, 0); }
+    clip: rect(28px, 9999px, 44px, 0); }
   10% {
-    clip: rect(99px, 9999px, 47px, 0); }
+    clip: rect(2px, 9999px, 97px, 0); }
   15.0% {
-    clip: rect(6px, 9999px, 7px, 0); }
+    clip: rect(40px, 9999px, 40px, 0); }
   20% {
-    clip: rect(47px, 9999px, 43px, 0); }
+    clip: rect(71px, 9999px, 58px, 0); }
   25% {
-    clip: rect(73px, 9999px, 6px, 0); }
+    clip: rect(62px, 9999px, 97px, 0); }
   30.0% {
-    clip: rect(23px, 9999px, 74px, 0); }
+    clip: rect(32px, 9999px, 51px, 0); }
   35% {
-    clip: rect(94px, 9999px, 84px, 0); }
+    clip: rect(37px, 9999px, 10px, 0); }
   40% {
-    clip: rect(1px, 9999px, 60px, 0); }
+    clip: rect(22px, 9999px, 37px, 0); }
   45% {
-    clip: rect(22px, 9999px, 14px, 0); }
+    clip: rect(34px, 9999px, 9px, 0); }
   50% {
-    clip: rect(95px, 9999px, 7px, 0); }
+    clip: rect(17px, 9999px, 94px, 0); }
   55.0% {
-    clip: rect(96px, 9999px, 70px, 0); }
+    clip: rect(40px, 9999px, 33px, 0); }
   60.0% {
-    clip: rect(19px, 9999px, 25px, 0); }
+    clip: rect(1px, 9999px, 39px, 0); }
   65% {
-    clip: rect(69px, 9999px, 33px, 0); }
+    clip: rect(11px, 9999px, 38px, 0); }
   70% {
-    clip: rect(90px, 9999px, 26px, 0); }
+    clip: rect(65px, 9999px, 86px, 0); }
   75% {
-    clip: rect(58px, 9999px, 21px, 0); }
+    clip: rect(2px, 9999px, 98px, 0); }
   80% {
-    clip: rect(70px, 9999px, 38px, 0); }
+    clip: rect(26px, 9999px, 75px, 0); }
   85.0% {
-    clip: rect(90px, 9999px, 55px, 0); }
+    clip: rect(80px, 9999px, 12px, 0); }
   90% {
-    clip: rect(15px, 9999px, 58px, 0); }
+    clip: rect(48px, 9999px, 47px, 0); }
   95% {
-    clip: rect(18px, 9999px, 88px, 0); }
+    clip: rect(62px, 9999px, 12px, 0); }
   100% {
-    clip: rect(27px, 9999px, 52px, 0); } }
+    clip: rect(57px, 9999px, 74px, 0); } }
 .glitch::after {
   content: attr(data-text);
   position: absolute;
@@ -55,47 +55,47 @@
 
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(42px, 9999px, 5px, 0); }
+    clip: rect(34px, 9999px, 43px, 0); }
   5% {
-    clip: rect(77px, 9999px, 51px, 0); }
+    clip: rect(43px, 9999px, 58px, 0); }
   10% {
-    clip: rect(20px, 9999px, 50px, 0); }
+    clip: rect(61px, 9999px, 3px, 0); }
   15.0% {
-    clip: rect(76px, 9999px, 39px, 0); }
+    clip: rect(5px, 9999px, 61px, 0); }
   20% {
-    clip: rect(61px, 9999px, 22px, 0); }
+    clip: rect(91px, 9999px, 83px, 0); }
   25% {
-    clip: rect(14px, 9999px, 84px, 0); }
+    clip: rect(47px, 9999px, 21px, 0); }
   30.0% {
-    clip: rect(49px, 9999px, 73px, 0); }
+    clip: rect(73px, 9999px, 74px, 0); }
   35% {
-    clip: rect(31px, 9999px, 13px, 0); }
+    clip: rect(77px, 9999px, 59px, 0); }
   40% {
-    clip: rect(92px, 9999px, 49px, 0); }
+    clip: rect(50px, 9999px, 4px, 0); }
   45% {
-    clip: rect(71px, 9999px, 1px, 0); }
+    clip: rect(20px, 9999px, 36px, 0); }
   50% {
-    clip: rect(22px, 9999px, 50px, 0); }
+    clip: rect(33px, 9999px, 84px, 0); }
   55.0% {
-    clip: rect(66px, 9999px, 75px, 0); }
+    clip: rect(88px, 9999px, 14px, 0); }
   60.0% {
-    clip: rect(63px, 9999px, 17px, 0); }
+    clip: rect(17px, 9999px, 8px, 0); }
   65% {
-    clip: rect(100px, 9999px, 55px, 0); }
+    clip: rect(85px, 9999px, 12px, 0); }
   70% {
-    clip: rect(96px, 9999px, 55px, 0); }
+    clip: rect(17px, 9999px, 25px, 0); }
   75% {
-    clip: rect(49px, 9999px, 7px, 0); }
+    clip: rect(97px, 9999px, 70px, 0); }
   80% {
-    clip: rect(1px, 9999px, 91px, 0); }
+    clip: rect(2px, 9999px, 31px, 0); }
   85.0% {
-    clip: rect(91px, 9999px, 35px, 0); }
+    clip: rect(55px, 9999px, 67px, 0); }
   90% {
-    clip: rect(100px, 9999px, 80px, 0); }
+    clip: rect(17px, 9999px, 89px, 0); }
   95% {
-    clip: rect(50px, 9999px, 7px, 0); }
+    clip: rect(18px, 9999px, 70px, 0); }
   100% {
-    clip: rect(30px, 9999px, 78px, 0); } }
+    clip: rect(92px, 9999px, 67px, 0); } }
 .glitch::before {
   content: attr(data-text);
   position: absolute;
@@ -116,13 +116,18 @@ html, body {
   font-family: 'Open Sans';
   font-weight: 400; }
 
+body {
+  box-sizing: border-box; }
+
 section {
   height: 100vh;
   width: 100vw; }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   padding: 0;
-  margin: 0;
+  margin: 0; }
+
+h1 {
   font-size: 11rem;
   position: relative;
   top: 35%;
@@ -130,6 +135,29 @@ h1 {
 
 .red_blue {
   text-shadow: -2px 2px 0px rgba(255, 0, 0, 0.5), 4px -1px 0px rgba(0, 255, 255, 0.5); }
+
+h2 {
+  font-size: 4rem; }
+
+h3 {
+  font-size: 3rem; }
+
+p {
+  font-size: 1.2rem; }
+
+a {
+  font-size: 1.4rem;
+  text-decoration: none; }
+
+.button {
+  padding: 5px 10px;
+  color: #222;
+  text-transform: uppercase;
+  border: 1px solid #111;
+  transition: all 0.3s ease-in-out; }
+  .button:hover {
+    color: #ddd;
+    background-color: #111; }
 
 .arrow {
   background: none;
@@ -151,10 +179,6 @@ h1 {
     transform: rotate(-45deg);
     top: -1px;
     left: 7px; }
-
-section {
-  background: url(../img/small_steps.png);
-  background-blend-mode: overlay; }
 
 nav {
   position: fixed;
@@ -201,85 +225,151 @@ nav {
     text-transform: uppercase; }
 
 section.logo {
-  background: -webkit-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: -webkit-linear-gradient(90deg, #232526 10%, #414345 90%);
   /* Chrome 10+, Saf5.1+ */
-  background: -moz-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: -moz-linear-gradient(90deg, #232526 10%, #414345 90%);
   /* FF3.6+ */
-  background: -ms-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: -ms-linear-gradient(90deg, #232526 10%, #414345 90%);
   /* IE10 */
-  background: -o-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: -o-linear-gradient(90deg, #232526 10%, #414345 90%);
   /* Opera 11.10+ */
-  background: linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: linear-gradient(90deg, #232526 10%, #414345 90%);
   /* W3C */
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 5.7em; }
 
 section.philosophy {
-  display: table; }
-  section.philosophy .container {
-    margin: 0;
-    padding: 0;
-    display: table-row;
-    width: 70%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap; }
+  section.philosophy .row {
     text-align: center;
-    -ms-text-justify: distribute-all-lines;
-    text-justify: distribute-all-lines; }
-    section.philosophy .container:after {
-      content: '';
-      width: 100%;
-      display: inline-block;
-      font-size: 0;
-      line-height: 0; }
-    section.philosophy .container div {
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto; }
+    section.philosophy .row .process {
+      border: 1px solid #222;
       text-align: center;
-      width: 50%;
-      height: 100%;
-      vertical-align: top;
-      display: inline-block; }
-    section.philosophy .container .left {
-      background-color: #eee; }
-    section.philosophy .container .right {
-      background-color: #eee; }
+      width: 22%;
+      height: auto; }
+      section.philosophy .row .process p {
+        width: 80%; }
+  section.philosophy > div:first-child {
+    background: -webkit-linear-gradient(90deg, #232526 10%, #414345 90%);
+    /* Chrome 10+, Saf5.1+ */
+    background: -moz-linear-gradient(90deg, #232526 10%, #414345 90%);
+    /* FF3.6+ */
+    background: -ms-linear-gradient(90deg, #232526 10%, #414345 90%);
+    /* IE10 */
+    background: -o-linear-gradient(90deg, #232526 10%, #414345 90%);
+    /* Opera 11.10+ */
+    background: linear-gradient(90deg, #232526 10%, #414345 90%);
+    /* W3C */
+    color: #eee;
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center; }
+    section.philosophy > div:first-child a {
+      text-align: center;
+      display: block;
+      width: auto; }
+  section.philosophy > div:last-child {
+    background-color: #eee;
+    color: #111;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -webkit-flex: 3 0 0;
+    flex: 3 0 0;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    justify-content: center; }
+    section.philosophy > div:last-child .process {
+      margin: 8rem 1rem;
+      -webkit-flex: initial;
+      flex: initial;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: column wrap;
+      flex-flow: column wrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      align-items: center; }
+      section.philosophy > div:last-child .process > * {
+        -webkit-flex: initial;
+        flex: initial; }
+
+section.portfolio div.container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center; }
+section.portfolio .grid {
+  margin: 0;
+  padding-bottom: 2rem;
+  list-style: none;
+  position: relative;
+  width: 100%; }
+  section.portfolio .grid li {
+    margin: 2vh 1vw;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 45%; }
+    section.portfolio .grid li img {
+      display: block;
+      width: 100%;
+      cursor: pointer;
+      max-width: 100%; }
 
 section.us {
-  margin: 0;
-  width: 100vw;
-  overflow: auto;
-  background-color: tan;
-  display: table; }
-  section.us div.team {
-    margin: 0;
-    padding: 0;
-    display: table-row;
-    width: 90%;
-    height: 65%;
-    text-align: center;
-    -ms-text-justify: distribute-all-lines;
-    text-justify: distribute-all-lines; }
-    section.us div.team:after {
-      content: '';
-      width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around; }
+  section.us article.crew {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    justify-content: center; }
+    section.us article.crew div {
+      margin-right: 3rem;
+      margin-bottom: 5rem;
       display: inline-block;
-      font-size: 0;
-      line-height: 0; }
-    section.us div.team div {
-      text-align: center;
-      width: 40%;
-      height: auto;
-      vertical-align: top;
-      display: inline-block; }
-      section.us div.team div * {
-        display: inline-block; }
-      section.us div.team div img {
-        width: 35%;
-        min-width: 250px; }
-      section.us div.team div h3 {
-        width: 60%; }
-    section.us div.team img {
+      text-align: left; }
+      section.us article.crew div div {
+        max-width: 400px; }
+      section.us article.crew div h3, section.us article.crew div a {
+        text-align: center; }
+      section.us article.crew div img {
+        vertical-align: top;
+        margin: 1rem; }
+    section.us article.crew img {
+      width: 175px;
+      height: 175px;
       border-radius: 50%; }
-  section.us div.contact {
-    height: 35vh;
-    background-color: #aaa; }
 
 /*# sourceMappingURL=styles.css.map */
