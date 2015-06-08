@@ -114,15 +114,15 @@ nav {
     height: 100%; }
 
 section.logo {
-  background: -webkit-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: -webkit-linear-gradient(90deg, #232526 10%, #414345 90%);
   /* Chrome 10+, Saf5.1+ */
-  background: -moz-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: -moz-linear-gradient(90deg, #232526 10%, #414345 90%);
   /* FF3.6+ */
-  background: -ms-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: -ms-linear-gradient(90deg, #232526 10%, #414345 90%);
   /* IE10 */
-  background: -o-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: -o-linear-gradient(90deg, #232526 10%, #414345 90%);
   /* Opera 11.10+ */
-  background: linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: linear-gradient(90deg, #232526 10%, #414345 90%);
   /* W3C */
   text-align: center;
   text-transform: uppercase;
@@ -133,42 +133,73 @@ section.logo {
     color: #FFD34E; }
 
 section.philosophy {
-  display: table; }
-  section.philosophy .container {
-    margin: 0;
-    padding: 0;
-    display: table-row;
-    width: 70%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap; }
+  section.philosophy .row {
     text-align: center;
-    -ms-text-justify: distribute-all-lines;
-    text-justify: distribute-all-lines; }
-    section.philosophy .container:after {
-      content: '';
-      width: 100%;
-      display: inline-block;
-      font-size: 0;
-      line-height: 0; }
-    section.philosophy .container div {
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto; }
+    section.philosophy .row .process {
+      border: 1px solid #222;
       text-align: center;
-      width: 50%;
-      height: 100%;
-      vertical-align: top;
-      display: inline-block; }
-    section.philosophy .container .left {
-      background-color: #eee; }
-    section.philosophy .container .right {
-      text-align: center; }
-      section.philosophy .container .right div {
-        margin: 0 auto;
-        text-align: center;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-flow: column wrap;
-        flex-flow: column wrap;
-        -webkit-justify-content: center;
-        justify-content: center; }
-      section.philosophy .container .right a {
-        width: 50%; }
+      width: 22%;
+      height: auto; }
+      section.philosophy .row .process p {
+        width: 80%; }
+  section.philosophy > div:first-child {
+    background: -webkit-linear-gradient(90deg, #232526 10%, #414345 90%);
+    /* Chrome 10+, Saf5.1+ */
+    background: -moz-linear-gradient(90deg, #232526 10%, #414345 90%);
+    /* FF3.6+ */
+    background: -ms-linear-gradient(90deg, #232526 10%, #414345 90%);
+    /* IE10 */
+    background: -o-linear-gradient(90deg, #232526 10%, #414345 90%);
+    /* Opera 11.10+ */
+    background: linear-gradient(90deg, #232526 10%, #414345 90%);
+    /* W3C */
+    color: #eee;
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center; }
+    section.philosophy > div:first-child a {
+      text-align: center;
+      display: block;
+      width: auto; }
+  section.philosophy > div:last-child {
+    background-color: #eee;
+    color: #111;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -webkit-flex: 3 0 0;
+    flex: 3 0 0;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    justify-content: center; }
+    section.philosophy > div:last-child .process {
+      margin: 8rem 1rem;
+      -webkit-flex: initial;
+      flex: initial;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: column wrap;
+      flex-flow: column wrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      align-items: center; }
+      section.philosophy > div:last-child .process > * {
+        -webkit-flex: initial;
+        flex: initial; }
 
 section.portfolio div.container {
   display: -webkit-box;
