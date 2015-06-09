@@ -210,42 +210,35 @@ section.logo {
 }
 
 section.philosophy {
-    .row {
-        text-align: center;
+	background-color: #eee;
 
-        .process {
-            text-align: center;
-            width: 22%;
-            height: auto;
-
-            &:hover {
-
-            }
-
-            p {
-                width: 80%;
-            }
-        }
-    }
-
-    & > div:first-child {
-        background: #333;
+	.about-us { 
+		text-align: center; 
+		background: #333;
         
         color: #eee;
+	}
 
-        a {
-            text-align: center;
-            display: block;
-            width: auto;
-        }
-    }
-
-    & > div:last-child {
-        background-color: #eee;
+	.keywords {
+		@include cf();
+		@include center(800px);
+		padding: 60px 0;
+		
         color: #111;
+	}
 
-        .process {
-            margin: 8rem 1rem;
+    .process {
+    	@include col(1/3, $cycle: 3);
+
+        text-align: center;
+
+        &:hover {
+
+        }
+
+        p {
+        	margin: 0 auto;
+            width: 80%;
         }
     }
 }
@@ -276,13 +269,11 @@ section.portfolio {
 section.us {
     text-align: center;
 
-    article.crew {
+    .crew {
+    	@include cf();
 
-        div {
-            margin-right: 3rem;
-            margin-bottom: 5rem;
-            display: inline-block;
-            text-align: left;
+        article {
+            @include column(1/2, $cycle: 2);
 
             div {
                 max-width: 400px;
