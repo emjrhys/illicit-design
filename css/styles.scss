@@ -342,17 +342,17 @@ section.portfolio {
 
     .grid {
         margin: 0;
-        padding-bottom: 2rem;
+        padding: 0 0 2rem;
         list-style: none;
         position: relative;
         width: 100%;
 
         li {
-            margin: 2vh 1vw;
+            // margin: 2vh 1vw;
             position: relative;
             float: left;
             overflow: hidden;
-            width: 45%;
+            width: 50%;
 
             img {
                 display: block;
