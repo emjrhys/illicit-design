@@ -1,46 +1,209 @@
+/* no flex zone */
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
+/**
+ * Grid settings.
+ * All values are defaults and can therefore be easily overidden.
+ */
+/**
+ * List functions courtesy of the wonderful folks at Team Sass.
+ * Check out their awesome grid: Singularity.
+ */
+/**
+ * Get  percentage from a given ratio.
+ * @param {number} [$ratio=1] - The column ratio of the element.
+ * @returns {number} - The percentage value.
+ */
+/**
+ * Work out the column widths based on the ratio and gutter sizes.
+ * @param {number} [$ratios=1] - The column ratio of the element.
+ * @param {number} [$gutter=$jeet-gutter] - The gutter for the column.
+ * @returns {list} $width $gutter - A list containing the with and gutter for the element.
+ */
+/**
+ * Get the set layout direction for the project.
+ * @returns {string} $direction - The layout direction.
+ */
+/**
+ * Replace a specified list value with a new value (uses built in set-nth() if available)
+ * @param {list} $list - The list of values you want to alter.
+ * @param {number} $index - The index of the list item you want to replace.
+ * @param {*} $value - The value you want to replace $index with.
+ * @returns {list} $list - The list with the value replaced or removed.
+ * @warn if an invalid index is supplied.
+ */
+/**
+ * Reverse a list (progressively enhanced for Sass 3.3)
+ * @param {list} $list - The list of values you want to reverse.
+ * @returns {list} $result - The reversed list.
+ */
+/**
+ * Get the opposite direction to a given value.
+ * @param {string} $dir - The direction you want the opposite of.
+ * @returns {string} - The opposite direction to $dir.
+ * @warn if an incorrect string is provided.
+ */
+/**
+ * Perform a value into a percentage value.
+ * @param {number} $value - The value which should be converted.
+ * @returns {number} $value - The percentage.
+ */
+/**
+ * Style an element as a column with a gutter.
+ * @param {number} [$ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [$offset=0] - A offset specified as a fraction (see $ratios).
+ * @param {number} [$cycle=0] - Easily create an nth column grid where $cycle equals the number of columns.
+ * @param {number} [$uncycle=0] - Undo a previous cycle value to allow for a new one.
+ * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * Aliases for j-column().
+ */
+/**
+ * Get the width of a column and nothing else.
+ * @param {number} [$ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * Aliases for j-column-width().
+ */
+/**
+ * Get the gutter size of a column and nothing else.
+ * @param {number} [ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [gutter=jeet.gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * Alias for j-column-gutter().
+ */
+/**
+ * Style an element as a column without any gutters for a seamless row.
+ * @param {number} [$ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [$offset=0] - A offset specified as a fraction (see $ratios).
+ * @param {number} [cycle=0] - Easily create an nth column grid where cycle equals the number of columns.
+ * @param {number} [uncycle=0] - Undo a previous cycle value to allow for a new one.
+ */
+/**
+ * Alias for j-span().
+ */
+/**
+ * Reorder columns without altering the HTML.
+ * @param {number} [$ratios=0] - Specify how far along you want the element to move.
+ * @param {string} [$col-or-span=column] - Specify whether the element has a gutter or not.
+ * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * Alias for j-shift().
+ */
+/**
+ * Reset an element that has had shift() applied to it.
+ */
+/**
+ * Alias for j-unshift().
+ */
+/**
+ * View the grid and its layers for easy debugging.
+ * @param {string} [$color=black] - The background tint applied.
+ * @param {boolean} [$important=false] - Whether to apply the style as !important.
+ */
+/**
+ * Aliases for j-edit().
+ */
+/**
+ * Horizontally center an element.
+ * @param {number} [$max-width=1410px] - The max width the element can be.
+ * @param {number} [$pad=0] - Specify the element's left and right padding.
+ */
+/**
+ * Alias for j-center().
+ */
+/**
+ * Uncenter an element.
+ */
+/**
+ * Alias for j-uncenter().
+ */
+/**
+ * Stack an element so that nothing is either side of it.
+ * @param {number} [$pad=0] - Specify the element's left and right padding.
+ * @param {boolean/string} [$align=false] - Specify the text align for the element.
+ */
+/**
+ * Alias for j-stack().
+ */
+/**
+ * Unstack an element.
+ */
+/**
+ * Alias for j-unstack().
+ */
+/**
+ * Center an element on either or both axes.
+ * @requires A parent container with relative positioning.
+ * @param {string} [$direction=both] - Specify which axes to center the element on.
+ */
+/**
+ * Alias for j-align().
+ */
+/**
+ * Apply a clearfix to an element.
+ */
+/**
+ * Alias for j-cf().
+ */
 @keyframes noise-anim {
   0% {
-    clip: rect(43px, 9999px, 50px, 0); }
+    clip: rect(44px, 9999px, 36px, 0); }
   5% {
-    clip: rect(29px, 9999px, 85px, 0); }
+    clip: rect(34px, 9999px, 86px, 0); }
   10% {
-    clip: rect(100px, 9999px, 65px, 0); }
+    clip: rect(47px, 9999px, 16px, 0); }
   15.0% {
-    clip: rect(38px, 9999px, 74px, 0); }
+    clip: rect(78px, 9999px, 73px, 0); }
   20% {
-    clip: rect(68px, 9999px, 90px, 0); }
+    clip: rect(46px, 9999px, 40px, 0); }
   25% {
-    clip: rect(69px, 9999px, 68px, 0); }
+    clip: rect(47px, 9999px, 10px, 0); }
   30.0% {
-    clip: rect(63px, 9999px, 53px, 0); }
+    clip: rect(17px, 9999px, 16px, 0); }
   35% {
-    clip: rect(34px, 9999px, 95px, 0); }
+    clip: rect(52px, 9999px, 20px, 0); }
   40% {
-    clip: rect(44px, 9999px, 48px, 0); }
+    clip: rect(66px, 9999px, 95px, 0); }
   45% {
-    clip: rect(99px, 9999px, 73px, 0); }
+    clip: rect(52px, 9999px, 91px, 0); }
   50% {
-    clip: rect(75px, 9999px, 13px, 0); }
+    clip: rect(14px, 9999px, 55px, 0); }
   55.0% {
-    clip: rect(23px, 9999px, 85px, 0); }
+    clip: rect(52px, 9999px, 68px, 0); }
   60.0% {
-    clip: rect(17px, 9999px, 80px, 0); }
+    clip: rect(90px, 9999px, 84px, 0); }
   65% {
-    clip: rect(35px, 9999px, 4px, 0); }
+    clip: rect(27px, 9999px, 44px, 0); }
   70% {
-    clip: rect(55px, 9999px, 5px, 0); }
+    clip: rect(65px, 9999px, 73px, 0); }
   75% {
-    clip: rect(96px, 9999px, 77px, 0); }
+    clip: rect(21px, 9999px, 21px, 0); }
   80% {
-    clip: rect(50px, 9999px, 56px, 0); }
+    clip: rect(74px, 9999px, 39px, 0); }
   85.0% {
-    clip: rect(79px, 9999px, 13px, 0); }
+    clip: rect(59px, 9999px, 12px, 0); }
   90% {
-    clip: rect(49px, 9999px, 98px, 0); }
+    clip: rect(29px, 9999px, 22px, 0); }
   95% {
-    clip: rect(88px, 9999px, 85px, 0); }
+    clip: rect(5px, 9999px, 76px, 0); }
   100% {
-    clip: rect(3px, 9999px, 8px, 0); } }
+    clip: rect(71px, 9999px, 62px, 0); } }
 .glitch::after {
   content: attr(data-text);
   position: absolute;
@@ -55,47 +218,47 @@
 
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(37px, 9999px, 7px, 0); }
+    clip: rect(18px, 9999px, 73px, 0); }
   5% {
-    clip: rect(86px, 9999px, 47px, 0); }
+    clip: rect(73px, 9999px, 34px, 0); }
   10% {
-    clip: rect(29px, 9999px, 68px, 0); }
+    clip: rect(53px, 9999px, 81px, 0); }
   15.0% {
-    clip: rect(34px, 9999px, 45px, 0); }
+    clip: rect(94px, 9999px, 98px, 0); }
   20% {
-    clip: rect(35px, 9999px, 38px, 0); }
+    clip: rect(79px, 9999px, 99px, 0); }
   25% {
-    clip: rect(55px, 9999px, 26px, 0); }
+    clip: rect(95px, 9999px, 33px, 0); }
   30.0% {
-    clip: rect(58px, 9999px, 63px, 0); }
+    clip: rect(45px, 9999px, 80px, 0); }
   35% {
-    clip: rect(90px, 9999px, 4px, 0); }
+    clip: rect(28px, 9999px, 42px, 0); }
   40% {
-    clip: rect(2px, 9999px, 16px, 0); }
+    clip: rect(22px, 9999px, 72px, 0); }
   45% {
-    clip: rect(46px, 9999px, 18px, 0); }
+    clip: rect(89px, 9999px, 87px, 0); }
   50% {
-    clip: rect(68px, 9999px, 74px, 0); }
+    clip: rect(87px, 9999px, 22px, 0); }
   55.0% {
-    clip: rect(78px, 9999px, 58px, 0); }
+    clip: rect(63px, 9999px, 54px, 0); }
   60.0% {
-    clip: rect(41px, 9999px, 81px, 0); }
+    clip: rect(51px, 9999px, 45px, 0); }
   65% {
-    clip: rect(1px, 9999px, 28px, 0); }
+    clip: rect(59px, 9999px, 59px, 0); }
   70% {
-    clip: rect(50px, 9999px, 37px, 0); }
+    clip: rect(10px, 9999px, 94px, 0); }
   75% {
-    clip: rect(3px, 9999px, 33px, 0); }
+    clip: rect(71px, 9999px, 90px, 0); }
   80% {
-    clip: rect(35px, 9999px, 48px, 0); }
+    clip: rect(13px, 9999px, 69px, 0); }
   85.0% {
-    clip: rect(34px, 9999px, 7px, 0); }
+    clip: rect(17px, 9999px, 48px, 0); }
   90% {
-    clip: rect(77px, 9999px, 29px, 0); }
+    clip: rect(28px, 9999px, 31px, 0); }
   95% {
-    clip: rect(90px, 9999px, 74px, 0); }
+    clip: rect(39px, 9999px, 12px, 0); }
   100% {
-    clip: rect(77px, 9999px, 31px, 0); } }
+    clip: rect(1px, 9999px, 5px, 0); } }
 .glitch::before {
   content: attr(data-text);
   position: absolute;
@@ -119,10 +282,6 @@ html, body {
 body {
   box-sizing: border-box; }
 
-section {
-  height: 100vh;
-  width: 100vw; }
-
 h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0; }
@@ -132,9 +291,6 @@ h1 {
   position: relative;
   top: 35%;
   color: #fff; }
-
-.red_blue {
-  text-shadow: -2px 2px 0px rgba(255, 0, 0, 0.5), 4px -1px 0px rgba(0, 255, 255, 0.5); }
 
 h2 {
   font-size: 4rem; }
@@ -226,98 +382,38 @@ nav {
 
 section.logo {
   background-color: #000;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 5.7em;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-justify-content: center;
-  justify-content: center; }
+  height: 100vh; }
+  section.logo img {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%; }
 
-section.philosophy {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: column wrap;
-  flex-flow: column wrap; }
-  section.philosophy .row {
-    text-align: center; }
-    section.philosophy .row .process {
-      text-align: center;
-      width: 22%;
-      height: auto; }
-      section.philosophy .row .process p {
-        width: 80%; }
-  section.philosophy > div:first-child {
-    background: -webkit-linear-gradient(90deg, #232526 10%, #414345 90%);
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(90deg, #232526 10%, #414345 90%);
-    /* FF3.6+ */
-    background: -ms-linear-gradient(90deg, #232526 10%, #414345 90%);
-    /* IE10 */
-    background: -o-linear-gradient(90deg, #232526 10%, #414345 90%);
-    /* Opera 11.10+ */
-    background: linear-gradient(90deg, #232526 10%, #414345 90%);
-    /* W3C */
-    color: #eee;
-    -webkit-flex: 1 0 0;
-    flex: 1 0 0;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    align-items: center; }
-    section.philosophy > div:first-child a {
-      text-align: center;
-      display: block;
-      width: auto; }
-  section.philosophy > div:last-child {
-    background-color: #eee;
-    color: #111;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    -webkit-flex: 3 0 0;
-    flex: 3 0 0;
-    flex-flow: row wrap;
-    -webkit-justify-content: center;
-    justify-content: center; }
-    section.philosophy > div:last-child .process {
-      margin: 8rem 1rem;
-      -webkit-flex: initial;
-      flex: initial;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-flex-flow: column wrap;
-      flex-flow: column wrap;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-align-items: center;
-      align-items: center; }
-      section.philosophy > div:last-child .process > * {
-        -webkit-flex: initial;
-        flex: initial; }
+section.philosophy .row {
+  text-align: center; }
+  section.philosophy .row .process {
+    text-align: center;
+    width: 22%;
+    height: auto; }
+    section.philosophy .row .process p {
+      width: 80%; }
+section.philosophy > div:first-child {
+  background: #333;
+  color: #eee; }
+  section.philosophy > div:first-child a {
+    text-align: center;
+    display: block;
+    width: auto; }
+section.philosophy > div:last-child {
+  background-color: #eee;
+  color: #111; }
+  section.philosophy > div:last-child .process {
+    margin: 8rem 1rem; }
 
-section.portfolio div.container {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-flow: row wrap;
-  align-content: center; }
 section.portfolio .grid {
   margin: 0;
-  padding: 0 0 2rem;
+  padding: 0;
   list-style: none;
-  position: relative;
   width: 100%; }
   section.portfolio .grid li {
     position: relative;
@@ -331,41 +427,22 @@ section.portfolio .grid {
       max-width: 100%; }
 
 section.us {
-  text-align: center;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-justify-content: space-around;
-  justify-content: space-around; }
-  section.us article.crew {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-justify-content: center;
-    justify-content: center; }
-    section.us article.crew div {
-      margin-right: 3rem;
-      margin-bottom: 5rem;
-      display: inline-block;
-      text-align: left; }
-      section.us article.crew div div {
-        max-width: 400px; }
-      section.us article.crew div h3, section.us article.crew div a {
-        text-align: center; }
-      section.us article.crew div img {
-        vertical-align: top;
-        margin: 1rem; }
-    section.us article.crew img {
-      width: 175px;
-      height: 175px;
-      border-radius: 50%; }
+  text-align: center; }
+  section.us article.crew div {
+    margin-right: 3rem;
+    margin-bottom: 5rem;
+    display: inline-block;
+    text-align: left; }
+    section.us article.crew div div {
+      max-width: 400px; }
+    section.us article.crew div h3, section.us article.crew div a {
+      text-align: center; }
+    section.us article.crew div img {
+      vertical-align: top;
+      margin: 1rem; }
+  section.us article.crew img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%; }
 
 /*# sourceMappingURL=styles.css.map */

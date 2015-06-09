@@ -1,3 +1,6 @@
+/* no flex zone */
+@import 'jeet/index';
+
 $width-std: 70%;
 $color-yellow: #FFD34E;
 
@@ -55,11 +58,6 @@ body {
     box-sizing: border-box;
 }
 
-section {
-    height: 100vh;
-    width: 100vw;
-}
-
 h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
@@ -71,10 +69,6 @@ h1 {
     position: relative;
     top: 35%;
     color: #fff;
-}
-
-.red_blue {
-	text-shadow: -2px 2px 0px rgba(255,0,0,0.5), 4px -1px 0px rgba(0,255,255,0.5);
 }
 
 h2 {
@@ -202,35 +196,20 @@ nav {
 }
 
 section.logo {
-    
-    background-color: #000;
+    background-color: #000; 
+    height: 100vh;
 
-    text-align: center;
-    text-transform: uppercase;
+    img {
+    	position: absolute;
+    	top: 50%;
 
-    letter-spacing: 5.7em;
+    	transform: translate(0, -50%);
 
-    // Flex, parent styling. 
-    // Three rows.
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: column nowrap;
-    flex-flow: column nowrap;
-    -webkit-justify-content: center;
-    justify-content: center;    
+    	width: 100%;
+    } 
 }
 
 section.philosophy {
-    // Flex, parent styling.
-    // Responsible for the two rows.
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-
     .row {
         text-align: center;
 
@@ -250,29 +229,9 @@ section.philosophy {
     }
 
     & > div:first-child {
-        background: -webkit-linear-gradient(90deg, #232526 10%, #414345 90%); /* Chrome 10+, Saf5.1+ */
-        background:    -moz-linear-gradient(90deg, #232526 10%, #414345 90%); /* FF3.6+ */
-        background:     -ms-linear-gradient(90deg, #232526 10%, #414345 90%); /* IE10 */
-        background:      -o-linear-gradient(90deg, #232526 10%, #414345 90%); /* Opera 11.10+ */
-        background:         linear-gradient(90deg, #232526 10%, #414345 90%); /* W3C */
+        background: #333;
         
         color: #eee;
-
-        // Flex child styling.
-        // Sets default height.
-        -webkit-flex: 1 0 0; 
-        flex: 1 0 0; 
-
-        // Flex, parent styling.
-        // Responsible for the rows of text.
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-flow: column wrap;
-        flex-flow: column wrap;
-        -webkit-justify-content: center;
-        justify-content:center;
-        -webkit-align-items: center;
-        align-items: center;
 
         a {
             text-align: center;
@@ -285,70 +244,20 @@ section.philosophy {
         background-color: #eee;
         color: #111;
 
-        // Flex, parent styling.
-        // Responsible for the three columns.
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-flow: row wrap;
-        -webkit-flex: 3 0 0; 
-        flex: 3 0 0; 
-        flex-flow: row wrap;
-        -webkit-justify-content: center;
-        justify-content:center;
-
-
-
         .process {
             margin: 8rem 1rem;
-
-            // Flex, child styling.
-            // Default behavior.
-            -webkit-flex: initial;
-            flex: initial;
-
-            // Flex, parent styling.
-            // Rows of text and icon
-            display: -webkit-flex;
-            display: flex;
-            -webkit-flex-flow: column wrap;
-            flex-flow: column wrap;
-            -webkit-justify-content: center;
-            justify-content:center;
-            -webkit-align-items: center;
-            align-items: center;
-
-            & > * {
-                // Flex, child styling.
-                // Default behavior.
-                -webkit-flex: initial;
-                flex: initial;
-            }
         }
     }
 }
 
 section.portfolio {
-
-    div.container {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-
-        flex-flow: row wrap;
-        align-content: center;
-    }
-
     .grid {
         margin: 0;
-        padding: 0 0 2rem;
+        padding: 0;
         list-style: none;
-        position: relative;
         width: 100%;
 
         li {
-            // margin: 2vh 1vw;
             position: relative;
             float: left;
             overflow: hidden;
@@ -367,30 +276,7 @@ section.portfolio {
 section.us {
     text-align: center;
 
-    // Flex, parent styling. 
-    // Three rows.
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: column nowrap;
-    flex-flow: column nowrap;
-    -webkit-justify-content: space-around;
-    justify-content:space-around;
-
     article.crew {
-        // Flex, parent styling. 
-        // Two columns.
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;  
-        -webkit-flex-flow: row wrap;
-        flex-flow: row wrap;
-        -webkit-justify-content: center;
-        justify-content: center;
 
         div {
             margin-right: 3rem;
