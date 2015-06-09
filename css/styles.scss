@@ -1,8 +1,8 @@
 /* no flex zone */
 @import 'jeet/index';
 
-$width-std: 70%;
-$color-yellow: #FFD34E;
+$accent-cyan: rgb(0, 255, 255);
+$accent-red: rgb(255, 0, 0);
 
 html, body {
     margin: 0;
@@ -40,8 +40,10 @@ a {
 }
 
 .button {
+	display: inline-block;
     padding: 5px 10px;
     color: #222;
+
     text-transform: uppercase;
     border: 1px solid #111;
     
@@ -131,7 +133,7 @@ nav {
         &.hidden { display: none; }
 
         &:hover {
-            background-color: $color-yellow;
+            background-color: $accent-cyan;
         }
     }
 
@@ -196,55 +198,43 @@ section.philosophy {
 
 section.portfolio {
     .grid {
+    	@include cf();
         margin: 0;
         padding: 0;
         list-style: none;
-        width: 100%;
 
         li {
-            position: relative;
-            float: left;
-            overflow: hidden;
-            width: 50%;
+        	@include span(1/2);
+        }
 
-            img {
-                display: block;
-                width: 100%;
-                cursor: pointer;
-                max-width: 100%;
-            }
+        img {
+        	width: 100%;
         }
     }
 }
 
 section.us {
-    text-align: center;
+	padding: 60px 0;
 
-    .crew {
+	h2, h3, a { 
+		text: { align: center; transform: uppercase; }
+	}
+
+	h2 { margin-bottom: 80px; }
+
+    .content {
     	@include cf();
+    	@include center(1200px);
+    }   
 
-        article {
-            @include column(1/2, $cycle: 2);
+    article {
+        @include column(1/2, $cycle: 2, $gutter: 10);
+    }
 
-            div {
-                max-width: 400px;
-            }
-
-            h3, a {
-                text-align: center;
-            }
-
-            img {
-                vertical-align: top;
-                margin: 1rem;
-            }
-        }
-
-        img {
-            width: 175px;
-            height: 175px;
-            border-radius: 50%;
-        }
-
-    }    
+    img {
+    	margin: 20px 20px 0 0;
+        width: 175px;
+        float: left;
+        border-radius: 50%;
+    } 
 }
