@@ -223,13 +223,12 @@ section.portfolio {
 section.us {
     text-align: center;
 
-    .crew {
-    	@include cf();
-        padding: 60px 0;
-    }
+	h2, a { 
+		text-align: center;
+	}
 
-	h2, h3, a { 
-		text: { align: center; transform: uppercase; }
+	h2, h3 {
+		text-transform: uppercase;
 	}
 
 	h2 { margin-bottom: 80px; }
@@ -237,10 +236,16 @@ section.us {
     .content {
     	@include cf();
     	@include center(1200px);
+
+    	padding: 120px 0;
     }   
 
     article {
         @include column(1/2, $cycle: 2, $gutter: 10);
+
+        > div {
+        	border: 1px solid black;
+        }
     }
 
     img {
