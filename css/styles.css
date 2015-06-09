@@ -184,22 +184,22 @@ h3 {
   font-size: 3rem; }
 
 p {
-  font-size: 1.2rem; }
+  font-size: 1.8rem; }
 
 a {
   font-size: 1.4rem;
   text-decoration: none; }
 
 .button {
+  padding: 10px 15px;
+  background-color: #3A6073;
+  color: #fafafa;
   display: inline-block;
-  padding: 5px 10px;
-  color: #222;
   text-transform: uppercase;
   border: 1px solid #111;
   transition: all 0.3s ease-in-out; }
   .button:hover {
-    color: #ddd;
-    background-color: #111; }
+    background-color: #2D4B59; }
 
 .arrow {
   background: none;
@@ -277,13 +277,21 @@ section.logo {
 section.philosophy {
   background-color: #eee; }
   section.philosophy .about-us {
+    padding: 120px;
     text-align: center;
-    background: #333;
-    color: #eee; }
+    background: -webkit-linear-gradient(#000, #111, #222);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#000, #111, #222);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#000, #111, #222);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#000, #111, #222);
+    /* Standard syntax */
+    color: #fafafa; }
   section.philosophy .keywords {
     *zoom: 1;
     width: auto;
-    max-width: 800px;
+    max-width: 1200px;
     float: none;
     display: block;
     margin-right: auto;
@@ -309,6 +317,8 @@ section.philosophy {
       float: right; }
     section.philosophy .process:nth-of-type(3n + 1) {
       clear: both; }
+    section.philosophy .process i {
+      font-size: 6rem; }
     section.philosophy .process p {
       margin: 0 auto;
       width: 80%; }
@@ -333,7 +343,15 @@ section.portfolio .grid {
     width: 100%; }
 
 section.us {
-  padding: 60px 0; }
+  text-align: center; }
+  section.us .crew {
+    *zoom: 1;
+    padding: 60px 0; }
+    section.us .crew:before, section.us .crew:after {
+      content: '';
+      display: table; }
+    section.us .crew:after {
+      clear: both; }
   section.us h2, section.us h3, section.us a {
     text-align: center;
     text-transform: uppercase; }
