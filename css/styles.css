@@ -161,6 +161,82 @@
 /**
  * Alias for j-cf().
  */
+@-webkit-keyframes glitch {
+  0% {
+    text-shadow: 3px 1px rgba(255, 0, 0, 0.6), -3px -1px rgba(0, 255, 255, 0.6); }
+  10% {
+    text-shadow: 1px 1px rgba(255, 0, 0, 0.6), -5px -1px rgba(0, 255, 255, 0.6); }
+  30% {
+    text-shadow: 0px 0px rgba(255, 0, 0, 0.6), 0px 0px rgba(0, 255, 255, 0.6); }
+  40% {
+    text-shadow: 3px 1px rgba(255, 0, 0, 0.6), -3px -1px rgba(0, 255, 255, 0.6); }
+  50% {
+    text-shadow: 1px 1px rgba(255, 0, 0, 0.6), -5px -1px rgba(0, 255, 255, 0.6); }
+  65% {
+    text-shadow: 7px 2px rgba(255, 0, 0, 0.6), 1px 0px rgba(0, 255, 255, 0.6); }
+  68% {
+    text-shadow: 6px 4px rgba(255, 0, 0, 0.6), 0px 2px rgba(0, 255, 255, 0.6); }
+  75% {
+    text-shadow: 2px -2px rgba(255, 0, 0, 0.6), -4px -4px rgba(0, 255, 255, 0.6); }
+  100% {
+    text-shadow: 3px 1px rgba(255, 0, 0, 0.6), -3px -1px rgba(0, 255, 255, 0.6); } }
+@-moz-keyframes glitch {
+  0% {
+    text-shadow: 3px 1px rgba(255, 0, 0, 0.6), -3px -1px rgba(0, 255, 255, 0.6); }
+  10% {
+    text-shadow: 1px 1px rgba(255, 0, 0, 0.6), -5px -1px rgba(0, 255, 255, 0.6); }
+  30% {
+    text-shadow: 0px 0px rgba(255, 0, 0, 0.6), 0px 0px rgba(0, 255, 255, 0.6); }
+  40% {
+    text-shadow: 3px 1px rgba(255, 0, 0, 0.6), -3px -1px rgba(0, 255, 255, 0.6); }
+  50% {
+    text-shadow: 1px 1px rgba(255, 0, 0, 0.6), -5px -1px rgba(0, 255, 255, 0.6); }
+  65% {
+    text-shadow: 7px 2px rgba(255, 0, 0, 0.6), 1px 0px rgba(0, 255, 255, 0.6); }
+  68% {
+    text-shadow: 6px 4px rgba(255, 0, 0, 0.6), 0px 2px rgba(0, 255, 255, 0.6); }
+  75% {
+    text-shadow: 2px -2px rgba(255, 0, 0, 0.6), -4px -4px rgba(0, 255, 255, 0.6); }
+  100% {
+    text-shadow: 3px 1px rgba(255, 0, 0, 0.6), -3px -1px rgba(0, 255, 255, 0.6); } }
+@-o-keyframes glitch {
+  0% {
+    text-shadow: 3px 1px rgba(255, 0, 0, 0.6), -3px -1px rgba(0, 255, 255, 0.6); }
+  10% {
+    text-shadow: 1px 1px rgba(255, 0, 0, 0.6), -5px -1px rgba(0, 255, 255, 0.6); }
+  30% {
+    text-shadow: 0px 0px rgba(255, 0, 0, 0.6), 0px 0px rgba(0, 255, 255, 0.6); }
+  40% {
+    text-shadow: 3px 1px rgba(255, 0, 0, 0.6), -3px -1px rgba(0, 255, 255, 0.6); }
+  50% {
+    text-shadow: 1px 1px rgba(255, 0, 0, 0.6), -5px -1px rgba(0, 255, 255, 0.6); }
+  65% {
+    text-shadow: 7px 2px rgba(255, 0, 0, 0.6), 1px 0px rgba(0, 255, 255, 0.6); }
+  68% {
+    text-shadow: 6px 4px rgba(255, 0, 0, 0.6), 0px 2px rgba(0, 255, 255, 0.6); }
+  75% {
+    text-shadow: 2px -2px rgba(255, 0, 0, 0.6), -4px -4px rgba(0, 255, 255, 0.6); }
+  100% {
+    text-shadow: 3px 1px rgba(255, 0, 0, 0.6), -3px -1px rgba(0, 255, 255, 0.6); } }
+@keyframes glitch {
+  0% {
+    text-shadow: 3px 1px rgba(255, 0, 0, 0.6), -3px -1px rgba(0, 255, 255, 0.6); }
+  10% {
+    text-shadow: 1px 1px rgba(255, 0, 0, 0.6), -5px -1px rgba(0, 255, 255, 0.6); }
+  30% {
+    text-shadow: 0px 0px rgba(255, 0, 0, 0.6), 0px 0px rgba(0, 255, 255, 0.6); }
+  40% {
+    text-shadow: 3px 1px rgba(255, 0, 0, 0.6), -3px -1px rgba(0, 255, 255, 0.6); }
+  50% {
+    text-shadow: 1px 1px rgba(255, 0, 0, 0.6), -5px -1px rgba(0, 255, 255, 0.6); }
+  65% {
+    text-shadow: 7px 2px rgba(255, 0, 0, 0.6), 1px 0px rgba(0, 255, 255, 0.6); }
+  68% {
+    text-shadow: 6px 4px rgba(255, 0, 0, 0.6), 0px 2px rgba(0, 255, 255, 0.6); }
+  75% {
+    text-shadow: 2px -2px rgba(255, 0, 0, 0.6), -4px -4px rgba(0, 255, 255, 0.6); }
+  100% {
+    text-shadow: 3px 1px rgba(255, 0, 0, 0.6), -3px -1px rgba(0, 255, 255, 0.6); } }
 html, body {
   margin: 0;
   padding: 0;
@@ -181,10 +257,11 @@ h2 {
   font-size: 4rem; }
 
 h3 {
+  margin: 1.2rem 0 0.6rem 0;
   font-size: 3rem; }
 
 p {
-  font-size: 1.8rem; }
+  font-size: 1.6rem; }
 
 a {
   font-size: 1.4rem;
@@ -233,7 +310,7 @@ nav {
   nav.closed {
     transform: translate(0, calc(100% - 80px)); }
     nav.closed .arrow {
-      opacity: 1;
+      text-shadow: 3px 1px rgba(255, 0, 0, 0.6), -3px -1px rgba(0, 255, 255, 0.6);
       transform: translate(0, 0); }
   nav span {
     display: block;
@@ -289,6 +366,11 @@ section.philosophy {
     background: linear-gradient(#000, #111, #222);
     /* Standard syntax */
     color: #fafafa; }
+    section.philosophy .about-us p:last-of-type {
+      font-family: 'Libre Baskerville';
+      font-weight: 400;
+      font-style: italic;
+      letter-spacing: 1px; }
   section.philosophy .keywords {
     *zoom: 1;
     width: auto;
@@ -299,7 +381,7 @@ section.philosophy {
     margin-left: auto;
     padding-left: 0;
     padding-right: 0;
-    padding: 60px 0;
+    padding: 100px 0;
     color: #111; }
     section.philosophy .keywords:before, section.philosophy .keywords:after {
       content: '';
@@ -312,36 +394,68 @@ section.philosophy {
     width: 31.33333%;
     margin-left: 0;
     margin-right: 3%;
-    text-align: center; }
+    text-align: center;
+    cursor: pointer; }
     section.philosophy .process:nth-of-type(3n) {
       margin-right: 0;
       float: right; }
     section.philosophy .process:nth-of-type(3n + 1) {
       clear: both; }
     section.philosophy .process i {
+      text-shadow: none;
       font-size: 6rem; }
+    section.philosophy .process:hover i {
+      -webkit-animation: glitch 0.35s;
+      /* Safari 4+ */
+      -moz-animation: glitch 0.35s;
+      /* Fx 5+ */
+      -o-animation: glitch 0.35s;
+      /* Opera 12+ */
+      animation: glitch 0.35s;
+      /* IE 10+, Fx 29+ */ }
     section.philosophy .process p {
       margin: 0 auto;
       width: 80%; }
+  section.philosophy .desktop:after {
+    content: "\f108";
+    position: absolute;
+    display: none;
+    left: -25px; }
+  section.philosophy .code:after {
+    content: "\f121";
+    position: absolute;
+    display: none;
+    left: -25px; }
+  section.philosophy .rocket:after {
+    content: "\f135";
+    position: absolute;
+    display: none;
+    left: -25px; }
 
-section.portfolio .grid {
-  *zoom: 1;
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-  section.portfolio .grid:before, section.portfolio .grid:after {
-    content: '';
-    display: table; }
-  section.portfolio .grid:after {
-    clear: both; }
-  section.portfolio .grid li {
-    float: left;
-    clear: none;
-    width: 50%;
-    margin-left: 0;
-    margin-right: 0; }
-  section.portfolio .grid img {
-    width: 100%; }
+section.portfolio {
+  border-top: 1px solid #ccc;
+  background-color: #f1f1f1;
+  text-align: center; }
+  section.portfolio header {
+    padding: 40px 0; }
+  section.portfolio .grid {
+    *zoom: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    section.portfolio .grid:before, section.portfolio .grid:after {
+      content: '';
+      display: table; }
+    section.portfolio .grid:after {
+      clear: both; }
+    section.portfolio .grid li {
+      float: left;
+      clear: none;
+      width: 50%;
+      margin-left: 0;
+      margin-right: 0; }
+    section.portfolio .grid img {
+      width: 100%; }
 
 section.us {
   text-align: center; }
