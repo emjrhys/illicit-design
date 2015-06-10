@@ -377,8 +377,6 @@ section.us {
       float: right; }
     section.us article:nth-of-type(2n + 1) {
       clear: both; }
-    section.us article > div {
-      border: 1px solid black; }
   section.us img {
     margin: 20px 20px 0 0;
     width: 175px;
