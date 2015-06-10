@@ -293,11 +293,10 @@ a {
   .arrow::before {
     margin-top: 60px;
     transform: rotate(45deg);
-    left: -7px; }
+    left: -14px; }
   .arrow::after {
     transform: rotate(-45deg);
-    top: -1px;
-    left: 7px; }
+    top: -1px; }
 
 nav {
   position: fixed;
@@ -451,7 +450,7 @@ section.portfolio {
     section.portfolio .grid li {
       float: left;
       clear: none;
-      width: 50%;
+      width: 33.33333%;
       margin-left: 0;
       margin-right: 0; }
     section.portfolio .grid img {
@@ -459,16 +458,9 @@ section.portfolio {
 
 section.us {
   text-align: center; }
-  section.us .crew {
-    *zoom: 1;
-    padding: 60px 0; }
-    section.us .crew:before, section.us .crew:after {
-      content: '';
-      display: table; }
-    section.us .crew:after {
-      clear: both; }
-  section.us h2, section.us h3, section.us a {
-    text-align: center;
+  section.us h2, section.us a {
+    text-align: center; }
+  section.us h2, section.us h3 {
     text-transform: uppercase; }
   section.us h2 {
     margin-bottom: 80px; }
@@ -481,7 +473,8 @@ section.us {
     margin-right: auto;
     margin-left: auto;
     padding-left: 0;
-    padding-right: 0; }
+    padding-right: 0;
+    padding: 120px 0; }
     section.us .content:before, section.us .content:after {
       content: '';
       display: table; }
@@ -498,6 +491,8 @@ section.us {
       float: right; }
     section.us article:nth-of-type(2n + 1) {
       clear: both; }
+    section.us article > div {
+      border: 1px solid black; }
   section.us img {
     margin: 20px 20px 0 0;
     width: 175px;
