@@ -237,6 +237,63 @@
     text-shadow: 2px -2px rgba(255, 0, 0, 0.6), -4px -4px rgba(0, 255, 255, 0.6); }
   100% {
     text-shadow: 3px 1px rgba(255, 0, 0, 0.6), -3px -1px rgba(0, 255, 255, 0.6); } }
+.preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 60px;
+  margin: -30px 0 0 -40px; }
+  .preloader .lines {
+    width: 80px;
+    height: 40px;
+    position: absolute; }
+    .preloader .lines .line {
+      width: 80px;
+      height: 10px;
+      background-color: #fff;
+      position: absolute;
+      clip: rect(0, 0, 20px, 0); }
+      .preloader .lines .line.line-1 {
+        top: 0;
+        animation: slide 2s ease 0s infinite; }
+      .preloader .lines .line.line-2 {
+        top: 15px;
+        animation: slide 2s ease 0.25s infinite; }
+      .preloader .lines .line.line-3 {
+        top: 30px;
+        animation: slide 2s ease 0.5s infinite; }
+  .preloader .loading-text {
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 13px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    line-height: 10px;
+    height: 10px;
+    animation: fade 1s ease 0s infinite; }
+
+@keyframes slide {
+  0% {
+    clip: rect(0, 0, 20px, 0); }
+  30% {
+    clip: rect(0, 80px, 20px, 0); }
+  50% {
+    clip: rect(0, 80px, 20px, 0); }
+  80% {
+    clip: rect(0, 80px, 20px, 80px); }
+  100% {
+    clip: rect(0, 80px, 20px, 80px); } }
+@keyframes fade {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 html, body {
   margin: 0;
   padding: 0;
@@ -273,6 +330,16 @@ p {
 a {
   font-size: 1.4rem;
   text-decoration: none; }
+
+.js div#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #000 url("http://files.mimoymima.com/images/loading.gif") no-repeat center center; }
 
 .button {
   display: inline-block;
@@ -439,17 +506,17 @@ section.philosophy {
         margin-right: auto; }
       section.philosophy .process p {
         max-width: 350px; } }
-  section.philosophy .desktop:after {
+  section.philosophy .desktop::after {
     content: "\f108";
     position: absolute;
     display: none;
     left: -25px; }
-  section.philosophy .code:after {
+  section.philosophy .code::after {
     content: "\f121";
     position: absolute;
     display: none;
     left: -25px; }
-  section.philosophy .rocket:after {
+  section.philosophy .rocket::after {
     content: "\f135";
     position: absolute;
     display: none;
@@ -582,10 +649,32 @@ section.crew {
       section.crew article:last-child {
         margin-right: auto; } }
 
-section.contact {
+footer.contact {
   background-color: #000;
-  padding: 120px 0; }
-  section.contact i {
+  padding: 120px 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: flex-end;
+  align-content: flex-end; }
+  footer.contact div {
+    float: left;
+    clear: none;
+    width: 26.66667%;
+    margin-left: 0;
+    margin-right: 10%;
+    font-size: 1.2rem; }
+    footer.contact div:nth-of-type(3n) {
+      margin-right: 0;
+      float: right; }
+    footer.contact div:nth-of-type(3n + 1) {
+      clear: both; }
+    footer.contact div p {
+      font-size: 1rem; }
+  footer.contact * {
     color: #fff; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js js" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -17,6 +17,18 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
+        <!-- <div id="preloader"></div> -->
+        <div class="preloader">
+          <div class="lines">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+          </div>
+          
+          <div class="loading-text">LOADING</div>
+        </div>
+
+        
         <nav class="closed">
             <span><button class="arrow"></button></span>
             <ul>
@@ -100,11 +112,15 @@
                 </div>
             </section>
 
-            <section class="contact">
-                    <a class="button" href="#">Give us a shout</a>
+            <footer class="contact">
+                <a class="button" href="#">Give us a shout</a>
                     
-                <i class="fa fa-barcode barcode fa-5x"></i>
-            </section>
+                <!-- <div>
+                    <p>Shout out to Yeoman, SASS, Github, coffee, and love for making this site possible. <3</p>
+                    <i class="fa fa-barcode barcode fa-5x"></i>
+                    <p>Let's keep in touch dudes!</p>
+                </div> -->
+            </footer>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
