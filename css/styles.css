@@ -275,6 +275,7 @@ a {
   text-decoration: none; }
 
 .button {
+  margin: 0 auto;
   padding: 10px 15px;
   background-color: #3A6073;
   color: #fafafa;
