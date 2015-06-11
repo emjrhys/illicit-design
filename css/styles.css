@@ -275,13 +275,6 @@ a {
   text-decoration: none; }
 
 .button {
-<<<<<<< HEAD
-  margin: 0 auto;
-  padding: 10px 15px;
-  background-color: #3A6073;
-  color: #fafafa;
-=======
->>>>>>> master
   display: inline-block;
   padding: 10px 15px;
   color: #000;
@@ -594,5 +587,9 @@ section.contact {
   padding: 120px 0; }
   section.contact i {
     color: #fff; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  nav {
+    display: none; } }
 
 /*# sourceMappingURL=styles.css.map */
