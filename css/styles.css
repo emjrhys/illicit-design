@@ -275,16 +275,17 @@ a {
   text-decoration: none; }
 
 .button {
-  margin: 0 auto;
-  padding: 10px 15px;
-  background-color: #3A6073;
-  color: #fafafa;
   display: inline-block;
+  padding: 10px 15px;
+  color: #000;
+  background-color: white;
   text-transform: uppercase;
-  border: 1px solid #111;
-  transition: all 0.3s ease-in-out; }
+  font-weight: 400;
+  font-size: 1.8rem;
+  transition: all 0.2s ease-in-out; }
   .button:hover {
-    background-color: #2D4B59; }
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff; }
 
 .arrow {
   background: none;
@@ -364,13 +365,13 @@ section.philosophy {
   section.philosophy .about-us {
     padding: 120px 20px;
     text-align: center;
-    background: -webkit-linear-gradient(#000, #111, #222);
+    background: -webkit-linear-gradient(#000, #181822);
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#000, #111, #222);
+    background: -o-linear-gradient(#000, #181822);
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#000, #111, #222);
+    background: -moz-linear-gradient(#000, #181822);
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#000, #111, #222);
+    background: linear-gradient(#000, #181822);
     /* Standard syntax */
     color: #fafafa; }
     section.philosophy .about-us p:last-of-type {
