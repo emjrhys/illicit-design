@@ -95,18 +95,20 @@ a {
 }
 
 .button {
-    margin: 0 auto;
-    padding: 10px 15px;
-    background-color: #3A6073;
-    color: #fafafa;
 	display: inline-block;
+    padding: 10px 15px;
+
+    color: #000;
+    background-color: rgba(255, 255, 255, 1);
+
     text-transform: uppercase;
-    border: 1px solid #111;
-    
-    transition: all 0.3s ease-in-out;
+    font: { weight: 400; size: 1.8rem; }
+
+    transition: all 0.2s ease-in-out;
     
     &:hover {
-        background-color: #2D4B59;
+        background-color: rgba(255, 255, 255, 0);
+        color: #fff;
     }
 }
 
@@ -224,10 +226,10 @@ section.philosophy {
         padding: 120px 20px;
 		text-align: center; 
 
-        background: -webkit-linear-gradient(#000, #111, #222); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#000, #111, #222); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#000, #111, #222); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#000, #111, #222); /* Standard syntax */
+        background: -webkit-linear-gradient(#000, #181822); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#000, #181822); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#000, #181822); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#000, #181822); /* Standard syntax */
         
         color: #fafafa;
 
