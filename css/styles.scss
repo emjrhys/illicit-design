@@ -59,36 +59,6 @@ $glitch-red: rgba(255,0,0,0.6);
     width: 80px;
     height: 60px;
     margin: -30px 0 0 -40px;
-
-    .lines {
-        width: 80px;
-        height: 40px;
-        position: absolute;
-
-    .line {
-        width: 80px;
-        height: 10px;
-        background-color: #fff;
-        position: absolute;
-        clip: rect(0, 0, 20px, 0);
-
-        &.line-1 {
-            top: 0;
-            animation: slide 2s ease 0s infinite;
-        }
-
-        &.line-2 {
-            top: 15px;
-            animation: slide 2s ease 0.25s infinite;
-          
-        }
-
-        &.line-3 {
-            top: 30px;
-            animation: slide 2s ease 0.5s infinite;
-        }
-    }
-  }
   
     .loading-text {
         position: absolute;
@@ -103,28 +73,6 @@ $glitch-red: rgba(255,0,0,0.6);
         height: 10px;
         animation: fade 1s ease 0s infinite;
     }
-}
-
-@keyframes slide {
-  0% {
-    clip: rect(0, 0, 20px, 0);
-  }
-  
-  30% {
-    clip: rect(0, 80px, 20px, 0);
-  }
-  
-  50% {
-    clip: rect(0, 80px, 20px, 0);
-  }
-  
-  80% {
-    clip: rect(0, 80px, 20px, 80px);
-  }
-  
-  100% {
-    clip: rect(0, 80px, 20px, 80px);
-  }
 }
 
 @keyframes fade {
