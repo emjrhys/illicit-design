@@ -356,7 +356,7 @@ nav {
   nav.closed {
     transform: translate(0, calc(100% - 80px)); }
     nav.closed .arrow {
-      text-shadow: 3px 1px rgba(255, 0, 0, 0.6), -3px -1px rgba(0, 255, 255, 0.6);
+      opacity: 1;
       transform: translate(0, 0); }
   nav span {
     display: block;
@@ -379,7 +379,7 @@ nav {
     nav li.hidden {
       display: none; }
     nav li:hover {
-      background-color: cyan; }
+      background-color: #eaeaea; }
   nav a {
     display: block;
     width: 100%;
@@ -623,17 +623,7 @@ section.crew {
 footer.contact {
   background-color: #000;
   padding: 120px 0;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  align-content: center;
-  color: #000; }
-  footer.contact * {
-    margin: 0 auto; }
+  text-align: center; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   nav {
