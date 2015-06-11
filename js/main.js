@@ -12,4 +12,13 @@ $('nav a').click(function() {
 	$('html,body').animate({
       	scrollTop: $('.section-container > section').eq(page).offset().top
     }, 500);
-})
+});
+
+// jQuery(document).ready(function($) {  
+
+// // site preloader -- also uncomment the div in the header and the css style for #preloader
+// 	$(window).load(function(){
+// 		$('#preloader').fadeOut('slow',function(){$(this).remove();});
+// 	});
+
+// });
