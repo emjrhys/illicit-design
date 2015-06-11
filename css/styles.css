@@ -318,7 +318,7 @@ nav {
   nav.closed {
     transform: translate(0, calc(100% - 80px)); }
     nav.closed .arrow {
-      text-shadow: 3px 1px rgba(255, 0, 0, 0.6), -3px -1px rgba(0, 255, 255, 0.6);
+      opacity: 1;
       transform: translate(0, 0); }
   nav span {
     display: block;
@@ -341,7 +341,7 @@ nav {
     nav li.hidden {
       display: none; }
     nav li:hover {
-      background-color: cyan; }
+      background-color: #eaeaea; }
   nav a {
     display: block;
     width: 100%;
