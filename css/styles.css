@@ -342,6 +342,7 @@ a {
   background: #000 url("http://files.mimoymima.com/images/loading.gif") no-repeat center center; }
 
 .button {
+  width: 147.5px;
   display: inline-block;
   padding: 10px 15px;
   color: #000;
@@ -658,26 +659,11 @@ footer.contact {
   flex-flow: column nowrap;
   -webkit-justify-content: center;
   justify-content: center;
-  -webkit-align-content: flex-end;
-  align-content: flex-end; }
-  footer.contact div {
-    float: left;
-    clear: none;
-    width: 26.66667%;
-    margin-left: 0;
-    margin-right: 10%;
-    font-size: 1.2rem; }
-    footer.contact div:nth-of-type(3n) {
-      margin-right: 0;
-      float: right; }
-    footer.contact div:nth-of-type(3n + 1) {
-      clear: both; }
-    footer.contact div p {
-      font-size: 1rem; }
+  -webkit-align-content: center;
+  align-content: center;
+  color: #000; }
   footer.contact * {
-    color: #fff; }
-  footer.contact i {
-    color: #fff; }
+    margin: 0 auto; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   nav {
