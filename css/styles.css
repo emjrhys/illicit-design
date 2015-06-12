@@ -334,6 +334,7 @@ a {
     margin: 0 auto;
     height: 1px;
     width: 20px;
+    transition: background-color .1s;
     background-color: #fff; }
   .arrow::before {
     margin-top: 60px;
@@ -342,6 +343,8 @@ a {
   .arrow::after {
     transform: rotate(-45deg);
     top: -1px; }
+  .arrow.black::before, .arrow.black::after {
+    background-color: #000; }
 
 nav {
   position: fixed;
