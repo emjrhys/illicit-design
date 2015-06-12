@@ -14,6 +14,19 @@ $('nav a').click(function() {
     }, 500);
 });
 
+$(window).scroll(function() {
+	var bottom = $(window).scrollTop() + window.innerHeight,
+		contentBottom = $('.keywords').offset().top,
+		footerTop = $('footer').offset().top;
+
+	console.log(bottom - contentBottom);
+	if (bottom < contentBottom || bottom > footerTop) {
+		$('.arrow').removeClass('black');
+	} else {
+		$('.arrow').addClass('black');
+	}
+});
+
 jQuery(document).ready(function($) {  
 
 // site preloader -- also uncomment the div in the header and the css style for #preloader
