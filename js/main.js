@@ -4,7 +4,7 @@ $('nav span').mouseenter(function() {
 
 $('nav').mouseleave(function() {
 	$('nav').addClass('closed');
-})
+});
 
 $('nav a').click(function() {
 	var page = $(this).parent().index();
