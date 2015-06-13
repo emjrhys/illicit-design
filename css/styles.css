@@ -359,6 +359,8 @@ section.philosophy {
     background: linear-gradient(#000, #181822);
     /* Standard syntax */
     color: #fafafa; }
+    section.philosophy .about-us p:first-of-type {
+      margin: 4rem 0; }
     section.philosophy .about-us p:last-of-type {
       font-family: 'Libre Baskerville';
       font-weight: 400;
@@ -580,7 +582,8 @@ footer.contact {
   justify-content: center;
   -webkit-align-content: center;
   align-content: center;
-  color: #000; }
+  color: #000;
+  text-align: center; }
   footer.contact * {
     margin: 0 auto; }
 
