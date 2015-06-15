@@ -283,7 +283,7 @@ a {
     transition: background-color 0.1s;
     background-color: #fff; }
   .arrow::before {
-    margin-top: 60px;
+    margin-top: 40px;
     transform: rotate(45deg);
     left: -14px; }
   .arrow::after {
@@ -303,14 +303,13 @@ nav {
   nav.closed {
     transform: translate(0, calc(100% - 60px)); }
     nav.closed .arrow {
-      text-shadow: 3px 1px rgba(255, 0, 0, 0.6), -3px -1px rgba(0, 255, 255, 0.6);
       transform: translate(0, 0); }
   nav span {
     display: block;
     height: 60px; }
   nav .arrow {
     transition: opacity 0.6s, transform 0.6s;
-    opacity: 0;
+    opacity: 1;
     transform: translate(0, -40px); }
   nav ul {
     list-style: none;
@@ -467,14 +466,12 @@ section.portfolio {
       clear: none;
       width: 33.33333%;
       margin-left: 0;
-      margin-right: 0; }
-      @media only screen and (max-width: 1100px) {
-        section.portfolio .grid li {
-          float: left;
-          clear: none;
-          width: 50%;
-          margin-left: 0;
-          margin-right: 0; } }
+      margin-right: 0;
+      /*
+        	@media only screen and (max-width: 1100px) {
+        		@include span(1/2);
+        	}
+            */ }
       @media only screen and (max-width: 800px) {
         section.portfolio .grid li {
           display: block;
@@ -486,9 +483,7 @@ section.portfolio {
           section.portfolio .grid li:first-child {
             margin-left: auto; }
           section.portfolio .grid li:last-child {
-            margin-right: auto; }
-          section.portfolio .grid li:nth-of-type(3) ~ li {
-            display: none; } }
+            margin-right: auto; } }
     section.portfolio .grid img {
       width: 100%; }
 
