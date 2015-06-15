@@ -366,6 +366,11 @@ section.philosophy {
       font-weight: 400;
       font-style: italic;
       letter-spacing: 1px; }
+  @media only screen and (max-width: 650px) {
+    section.philosophy .about-us {
+      padding: 120px 40px; }
+    section.philosophy br {
+      display: none; } }
   section.philosophy .keywords {
     *zoom: 1;
     width: auto;
