@@ -28,12 +28,6 @@ gulp.task('sass', function() {
 gulp.task('styles', function() {
     return gulp.src('css/*.css')
         .pipe(concat('all.css'))
-        .pipe(gulp.dest('css'));
-});
-
-// Autoprefix CSS
-gulp.task('autoprefixer', function () {
-    return gulp.src('css/all.css')
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
@@ -41,12 +35,14 @@ gulp.task('autoprefixer', function () {
         .pipe(gulp.dest('dist/css'));
 });
 
+/*
 // Minify CSS
 gulp.task('minify', function() {
-    return gulp.src('dist/css/*.css')
+    return gulp.src('dist/css')
     .pipe(minifyCss({compatibility: 'ie8'}))
-    .pipe(gulp.dest('dist/css'));
+    .pipe(gulp.dest('css'));
 });
+*/
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
@@ -61,9 +57,9 @@ gulp.task('scripts', function() {
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('js/*.js', ['lint', 'scripts']);
-    gulp.watch('scss/*.scss', ['sass', 'styles', 'autoprefixer', 'minify']);
+    gulp.watch('scss/*.scss', ['sass', 'styles']);
 });
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'styles', 'autoprefixer', 'minify', 'watch']);
-// gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
+gulp.task('default', ['lint', 'sass', 'styles', 'watch']);
+// gulp.task('default', ['lint', 'sass', 'styles', 'minify', 'watch']);
