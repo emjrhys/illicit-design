@@ -41,7 +41,7 @@ gulp.task('autoprefixer', function () {
         .pipe(gulp.dest('dist/css'));
 });
 
-// Minify CSS
+// Minify css
 gulp.task('minify', function() {
     return gulp.src('dist/css/*.css')
     .pipe(minifyCss({compatibility: 'ie8'}))
