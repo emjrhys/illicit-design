@@ -590,7 +590,6 @@ figure {
   overflow: hidden;
   background: #3085a3;
   text-align: center;
-  cursor: pointer;
   /* Anchor will cover the whole item by default */ }
   figure img {
     position: relative;
