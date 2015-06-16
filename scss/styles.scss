@@ -378,7 +378,7 @@ section.portfolio {
 
         	@media only screen and (max-width: 1100px) {
         		@include span(1/2);
-        	}ß
+        	}
 
         	@media only screen and (max-width: 800px) {
         		@include stack();
@@ -490,7 +490,8 @@ footer.contact {
 figure {
     margin: 0;
     position: relative;
-    // float: left;
+    min-width: 320px;
+    max-height: 360px;
     overflow: hidden;
     background: #3085a3;
     text-align: center;

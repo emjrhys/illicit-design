@@ -585,6 +585,8 @@ footer.contact {
 figure {
   margin: 0;
   position: relative;
+  min-width: 320px;
+  max-height: 360px;
   overflow: hidden;
   background: #3085a3;
   text-align: center;
